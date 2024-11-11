@@ -83,6 +83,7 @@
       class="mt-5"
       >Сохранить</v-btn
     >
+
     <v-btn
       v-if="editingItem"
       @click="cancelEdit(editingItem)"
@@ -119,6 +120,10 @@ const addItem = (newUser) => {
   items.value.push(newUser);
   localStorage.setItem("users", JSON.stringify(items.value));
   dialog.value = false;
+};
+
+const openDialog = () => {
+  dialog.value = true;
 };
 
 const refresh = () => {
