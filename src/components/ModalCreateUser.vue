@@ -31,7 +31,7 @@
       @change="validateRole"
     ></v-select>
 
-    <v-divider>Имя</v-divider>
+    <v-label>Имя</v-label>
     <v-text-field
       v-model="formData.ru.name"
       :counter="50"
@@ -63,7 +63,7 @@
       @input="validatField('name', 'ka')"
     ></v-text-field>
 
-    <v-divider>Должность</v-divider>
+    <v-label>Должность</v-label>
     <v-text-field
       v-model="formData.ru.position"
       :counter="50"
@@ -95,7 +95,7 @@
       @input="validatField('position', 'ka')"
     ></v-text-field>
 
-    <v-divider>Номер телефона</v-divider>
+    <v-label>Номер телефона</v-label>
     <v-text-field
       v-model="phone"
       :counter="15"
@@ -106,7 +106,7 @@
       @input="validatePhone"
     ></v-text-field>
 
-    <v-divider>Телеграмм</v-divider>
+    <v-label>Телеграмм</v-label>
     <v-text-field
       v-model="telegram"
       :counter="50"
@@ -117,7 +117,7 @@
       @input="validateTelegram"
     ></v-text-field>
 
-    <v-divider>Подпись</v-divider>
+    <v-label>Подпись</v-label>
     <v-text-field
       v-model="formData.ru.signature"
       :counter="200"

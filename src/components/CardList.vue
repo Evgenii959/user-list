@@ -19,7 +19,7 @@
       <v-btn @click="refresh">Обновить</v-btn>
     </v-row>
 
-    <p>Количество {{ filteredItems.length }}</p>
+    <v-label>Количество {{ filteredItems.length }}</v-label>
 
     <v-data-table class="elevation-1" item-key="email">
       <thead>
@@ -41,10 +41,10 @@
             <v-text-field v-model="item.name" class="mt-4" variant="outlined" />
           </td>
 
-          <td style="max-width: 280px" v-if="!item.isEditing">
+          <td v-if="!item.isEditing">
             {{ item.role }}
           </td>
-          <td v-else style="max-width: 280px">
+          <td v-else>
             <v-select
               v-model="item.role"
               :items="roles"
