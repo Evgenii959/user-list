@@ -20,8 +20,6 @@
     </v-row>
 
     <v-data-table
-      :headers="headers"
-      :items="filteredItems"
       class="elevation-1"
       item-key="email"
     >
