@@ -11,7 +11,4 @@ import CardList from "./components/CardList.vue";
 </script>
 
 <style scoped>
-html {
-  background-color: white;
-}
 </style>
