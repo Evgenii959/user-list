@@ -7,6 +7,7 @@
       placeholder="Иван01"
       outlined
       @input="validateEmail"
+      autocomplete="email"
     ></v-text-field>
 
     <v-text-field
@@ -17,6 +18,7 @@
       type="password"
       outlined
       @input="validatePassword"
+      autocomplete="current-password"
     ></v-text-field>
 
     <v-select
@@ -29,7 +31,7 @@
       @change="validateRole"
     ></v-select>
 
-    <v-subheader>Имя</v-subheader>
+    <v-divider>Имя</v-divider>
     <v-text-field
       v-model="formData.ru.name"
       :counter="50"
@@ -61,7 +63,7 @@
       @input="validatField('name', 'ka')"
     ></v-text-field>
 
-    <v-subheader>Должность</v-subheader>
+    <v-divider>Должность</v-divider>
     <v-text-field
       v-model="formData.ru.position"
       :counter="50"
@@ -93,7 +95,7 @@
       @input="validatField('position', 'ka')"
     ></v-text-field>
 
-    <v-subheader>Номер телефона</v-subheader>
+    <v-divider>Номер телефона</v-divider>
     <v-text-field
       v-model="phone"
       :counter="15"
@@ -104,7 +106,7 @@
       @input="validatePhone"
     ></v-text-field>
 
-    <v-subheader>Телеграмм</v-subheader>
+    <v-divider>Телеграмм</v-divider>
     <v-text-field
       v-model="telegram"
       :counter="50"
@@ -115,7 +117,7 @@
       @input="validateTelegram"
     ></v-text-field>
 
-    <v-subheader>Подпись</v-subheader>
+    <v-divider>Подпись</v-divider>
     <v-text-field
       v-model="formData.ru.signature"
       :counter="200"
