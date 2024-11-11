@@ -36,13 +36,11 @@
           :key="index"
           @click="startEditing(item)"
         >
-          <!-- Имя -->
           <td v-if="!item.isEditing">{{ item.name }}</td>
           <td v-else>
             <v-text-field v-model="item.name" class="mt-4" variant="outlined" />
           </td>
 
-          <!-- Роль -->
           <td style="max-width: 280px" v-if="!item.isEditing">
             {{ item.role }}
           </td>
@@ -57,7 +55,6 @@
             />
           </td>
 
-          <!-- Почта -->
           <td v-if="!item.isEditing">{{ item.email }}</td>
           <td v-else>
             <v-text-field
@@ -67,7 +64,6 @@
             />
           </td>
 
-          <!-- Телефон -->
           <td v-if="!item.isEditing">{{ item.phone }}</td>
           <td v-else>
             <v-text-field
