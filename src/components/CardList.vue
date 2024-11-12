@@ -21,7 +21,7 @@
 
     <v-label>Количество {{ filteredItems.length }}</v-label>
 
-    <v-data-table class="elevation-1" item-key="email">
+    <v-data-table class="elevation-1" item-key="email" hide-default-footer>
       <thead>
         <tr>
           <th class="text-left">Имя</th>
