@@ -155,7 +155,7 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits, computed, ref } from "vue";
+import { computed, ref } from "vue";
 
 const props = defineProps({
   dialog: Boolean,

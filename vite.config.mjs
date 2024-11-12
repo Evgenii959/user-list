@@ -7,7 +7,7 @@ import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  base: 'user-list',
+  base: '/user-list/',
   plugins: [
     Vue({
       template: { transformAssetUrls }
